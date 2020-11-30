@@ -1,0 +1,75 @@
+{
+  "name": "testbotv1",
+  "version": "0.0.2",
+  "description": "Get possible answers before",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "distl": "electron-builder -l",
+    "distw": "electron-builder -w"
+  },
+  "keywords": [],
+  "homepage": "jarvis-systems.tech",
+  "author": {
+    "name": "Skipper",
+    "email": "skipper@jarvis-systems.tech"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.0.2",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "edge-paths": "^2.1.0",
+    "firefox-profile": "^4.0.0",
+    "puppeteer-core": "^5.5.0"
+  },
+  "build": {
+    "appId": "com.jarvissystems",
+    "productName": "TestGetter",
+    "artifactName": "${productName}.${ext}",
+    "compression": "store",
+    "buildDependenciesFromSource": false,
+    "npmRebuild": true,
+    "asar": true,
+    "removePackageScripts": false,
+    "electronDownload": {
+      "cache": "./.electron-cache"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "win": {
+      "icon": "./Logo.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "directories": {
+      "output": "build"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}

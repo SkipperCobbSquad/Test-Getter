@@ -1,0 +1,137 @@
+body {
+  background-image: url('../icons/Logo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #232741;
+  margin: 0px;
+  padding: 0px;
+  font-family: Ubuntu;
+}
+
+::-webkit-scrollbar {
+  background-color: #232741;
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #339933;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#app {
+  margin: auto;
+  padding: 0;
+}
+
+#selector {
+  bottom: 10px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+#portalSelector {
+  text-align: center;
+  position: fixed;
+  width: 49%;
+  background-color: #339933;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+#quizizzSelector {
+  text-align: center;
+  width: 49%;
+  float: right;
+  background-color: #ec2647;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+#inputs {
+  margin: 20px;
+  padding: 20px;
+}
+
+input {
+  font-size: large;
+  width: 100%;
+  /* margin: 0px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid #339933;
+  border-radius: 5px;
+}
+
+#submit {
+  text-align: center;
+  width: 20%;
+  background-color: #339933;
+  margin: 10px 0;
+  padding: 3px;
+  border-radius: 3px;
+  float: right;
+  cursor: pointer;
+}
+
+#error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+  border: 3px solid red;
+  border-radius: 16px;
+  background-color: #474a6d;
+  color: #d0d3eb;
+}
+
+#tableq {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+}
+
+#tableq ul {
+  list-style: none;
+}
+
+#tableq li {
+  background-color: #282a41;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin: 5px;
+}
+.quest {
+  width: auto;
+  padding: 5px 10px;
+  background-color: #474a6d;
+  color: #d0d3eb;
+  border-radius: 5px;
+}
+
+#nexttest {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  text-align: center;
+  background-color: #ec2647;
+  padding: 7px 15px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+#nexttest p {
+  margin: 0;
+  padding: 0 10px;
+}
