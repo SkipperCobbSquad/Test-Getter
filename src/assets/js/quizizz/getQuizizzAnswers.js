@@ -35,7 +35,8 @@ const getQuizizzAnswers = async () => {
       if (typo !== 'SLIDE'){
         const question = quest.structure.query.text;
         const answs = [];
-        for (const answ of quest.structure.options) {
+        for (let answ in quest.structure.options) {
+          answ = quest.structure.options[answ]
           answs.push(answ.text);
         }
         results.push(new Quest(question, answs, typo));
