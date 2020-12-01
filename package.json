@@ -21,6 +21,7 @@
     "electron-builder": "^22.9.1"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "edge-paths": "^2.1.0",
     "firefox-profile": "^4.0.0",
     "puppeteer-core": "^5.5.0"

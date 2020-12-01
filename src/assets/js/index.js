@@ -6,9 +6,9 @@ selector.setAttribute('id', 'selector');
 const portalSelector = document.createElement('div');
 portalSelector.setAttribute('id', 'portalSelector');
 portalSelector.addEventListener('click', renderPortal);
-const pSP = document.createElement('p');
-pSP.textContent = 'TestPortal';
-portalSelector.appendChild(pSP);
+const pST = document.createElement('p');
+pST.textContent = 'TestPortal';
+portalSelector.appendChild(pST);
 selector.appendChild(portalSelector);
 //quizizz BTN
 const quizizzSelector = document.createElement('div');
