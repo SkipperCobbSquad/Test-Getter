@@ -17,16 +17,17 @@ const quizizz = async (pin) => {
     const roomHashResponse = await fetch(ROOM_HASH_PATH, init);
 
     const roomHashJson = await roomHashResponse.json();
+    console.log(roomHashJson);
     const roomHash = roomHashJson?.room?.hash;
     return roomHash;
   };
 
   let data = getRoomHash().then((hash) => {
-    let URL = window.location.href;
-    const GameType = URL.slice(URL.search('gameType=') + 9, URL.length);
+    // let URL = window.location.href;
+    // const GameType = URL.slice(URL.search('gameType=') + 9, URL.length);
     data = {
       roomHash: hash,
-      type: GameType,
+      // type: GameType,
     };
 
     let xhttp = new XMLHttpRequest();
@@ -37,7 +38,7 @@ const quizizz = async (pin) => {
     );
     xhttp.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
     xhttp.send(JSON.stringify(data));
-    return JSON.parse(xhttp.responseText);
+    return {test: JSON.parse(xhttp.responseText), roomHash: hash}
   });
-  return data
+  return (await data).test
 };

@@ -22,7 +22,6 @@ class Test {
     const tbody = document.createElement('tbody');
     table.appendChild(tbody);
     const sortedQuest = this.sorted();
-    console.log(sortedQuest);
     for (const res of sortedQuest) {
       const tr = document.createElement('tr');
       tr.appendChild(res.render());

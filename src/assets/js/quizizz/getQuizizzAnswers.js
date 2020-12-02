@@ -35,7 +35,7 @@ const getQuizizzAnswers = async (pin) => {
     const results = [];
     for (let quest of Object.keys(test.questions)) {
       quest = test.questions[quest];
-      console.log(quest);
+      // console.log(quest);
       const typo = quest.type;
       if (typo !== 'SLIDE') {
         const question = quest.structure.query.text;

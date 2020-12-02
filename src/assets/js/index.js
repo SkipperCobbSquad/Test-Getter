@@ -27,3 +27,4 @@ app.appendChild(selector);
 //TODO: Get images and or films also
 //TODO: Live version testportal like Quizizz whit addons
 //TODO: Addons for Quizizz for live?
+// Thanks quizizz hax - lldvee [*]
